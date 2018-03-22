@@ -2,6 +2,18 @@ body,
 html {
     height: 100%;
     margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.btn {
+    font-size: 18pt;
+    padding: 16px;
+    border: 2px solid yellow;
 }
 
 .introduction {
@@ -10,4 +22,23 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #eee;
+    text-align: center;
 }
+
+.introduction .logo {
+    margin-top: 64px;
+    height: 156px;
+    width: auto;
+}
+
+.introduction h1 {
+    font-size: 36pt;
+    margin-top: 96px;
+}
+
+
+.introduction .btn {
+
+}
+
