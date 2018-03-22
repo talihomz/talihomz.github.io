@@ -45,7 +45,7 @@ html {
 
 .introduction .btn {
     color: #eee;
-} 
+}
 
 .introduction .see-more {
     position: absolute;
@@ -55,3 +55,6 @@ html {
     margin-bottom: 32px;
 }
 
+.introduction .see-more img {
+    width: 24px;
+}
