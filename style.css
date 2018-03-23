@@ -91,3 +91,52 @@ h3 {
     height: 156px;
     width: auto;
 }
+
+.projects {
+    background-color: #eeeeee;
+}
+
+.project-item {
+    margin: 24px 0px;
+    background: white;
+    display: flex;
+    max-height: 540px;
+}
+
+.project-item img {
+    flex: 1;
+}
+
+.project-info {
+    padding: 24px;
+    text-align: left;
+    position: relative;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container li {
+    width: auto;
+    padding: 8px;
+    margin: 8px;
+    border: 2px red solid;
+    border-radius: 4px;
+}
+
+.project-buttons {
+    position: absolute;
+    bottom: 32px;
+}
+
