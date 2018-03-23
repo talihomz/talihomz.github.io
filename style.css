@@ -1,13 +1,28 @@
+* {
+    border: 1px dashed red;
+}
+
 body,
 html {
     height: 100%;
     margin: 0;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 28pt;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 24pt;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 1024px;
+    text-align: center;
 }
 
 .btn {
@@ -18,6 +33,10 @@ html {
     border: 2px solid yellow;
     border-radius: 32px;
     font-weight: bold;
+}
+
+.skill {
+    margin: 24px;
 }
 
 .introduction {
@@ -57,4 +76,18 @@ html {
 
 .introduction .see-more img {
     width: 24px;
+}
+
+.expertise .row {
+    display: flex;
+}
+
+.expertise .skill {
+    flex: 1;
+}
+
+.skill img {
+    margin-top: 64px;
+    height: 156px;
+    width: auto;
 }
