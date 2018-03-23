@@ -31,7 +31,7 @@ h3 {
     text-transform: uppercase;
     padding: 16px 32px;
     border: 2px solid yellow;
-    border-radius: 32px;
+    border-radius: 4px;
     font-weight: bold;
 }
 
@@ -97,10 +97,13 @@ h3 {
 }
 
 .project-item {
-    margin: 24px 0px;
+    margin: 48px 0px;
     background: white;
     display: flex;
     max-height: 540px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px grey;
+    border: none;
 }
 
 .project-item img {
@@ -140,3 +143,28 @@ h3 {
     bottom: 32px;
 }
 
+.project-buttons .btn {
+    margin-right: 16px;
+}
+
+.contact {
+    background-color: #ffda5a;
+    color: #232323;
+    padding: 64px 0;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+.contact .btn {
+    margin: 24px;
+    border: 2px solid #232323;
+    color: #232323;
+}
+
+.contact .btn:hover {
+    margin: 24px;
+    background-color: #232323;
+    color: #ffda5a;
+}
