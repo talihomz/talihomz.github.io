@@ -1,3 +1,4 @@
+/* General */
 body,
 html {
     height: 100%;
@@ -69,6 +70,7 @@ h3 {
     margin: 24px;
 }
 
+/* Introdiction */
 .introduction {
     position: relative;
     background-image: url("../images/cover.jpg");
@@ -113,6 +115,7 @@ h3 {
     width: 24px;
 }
 
+/* Expertise */
 .expertise .row {
     display: flex;
 }
@@ -127,6 +130,7 @@ h3 {
     width: auto;
 }
 
+/* Projects */
 .projects {
     background-color: #eeeeee;
     padding: 48px 0;
@@ -152,7 +156,7 @@ h3 {
     position: relative;
 }
 
-.flex-container {
+.tech-stack {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -166,7 +170,7 @@ h3 {
     flex-wrap: wrap;
 }
 
-.flex-container li {
+.tech-stack li {
     width: auto;
     padding: 8px;
     margin: 8px;
@@ -191,6 +195,7 @@ h3 {
     animation: intro_button_hover;
 }
 
+/* Contact */
 .contact {
     background-color: #ffda5a;
     color: #232323;
@@ -213,6 +218,7 @@ h3 {
     color: #ffda5a;
 }
 
+/* Footer */
 .footer {
     background-color: #252a31;
 }
@@ -254,7 +260,38 @@ h3 {
     padding: 6px;
 }
 
+/* Smaller screens */
+@media screen and (max-width: 576px) {
+    .introduction .logo {
+        margin-top: 32px;
+        height: 94px;
+    }
 
+    .introduction h1 {
+        font-size: 24pt;
+        margin-top: 64px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    body {
+        background: green;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: blue;
+    }
+}
+
+/* @media screen and (min-width: 992px) {
+    body {
+        background: blue;
+    }
+} */
+
+/* Animations & effects */
 @keyframes intro_button_hover {
     100%    { 
         background: #333; 
