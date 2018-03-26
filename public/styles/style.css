@@ -26,14 +26,43 @@ h3 {
     font-size: 12pt;
     text-transform: uppercase;
     padding: 16px 32px;
-    border: 2px solid #ffda5a;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    border: 2px solid #ffda5a;
+    border-radius: 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+.btn:hover:before, 
+.btn:focus:before, 
+.btn:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
 }
 
 .btn:focus {
     outline: none;
+}
+
+.btn:hover {
+    color: #111;
+    background: #ffda5a;
 }
 
 .skill {
@@ -66,11 +95,6 @@ h3 {
 .introduction .btn {
     color: #fff;
     border: none;
-}
-
-.introduction .btn:hover {
-    color: #111;
-    background: #ffda5a;
 }
 
 .introduction .see-more {
@@ -153,13 +177,13 @@ h3 {
 
 .project-buttons .btn {
     margin-right: 16px;
-    background: transparent;
-    border: solid #ffda5a 2px;
     color: #333
 }
 
-.project-buttons .btn:hover {
-    animation: intro_button_hover 0.7s ease-in
+.project-buttons .btn:hover,
+.project-buttons .btn:active,
+.project-buttons .btn:focus {
+    animation: intro_button_hover;
 }
 
 .contact {
@@ -225,16 +249,31 @@ h3 {
     padding: 6px;
 }
 
+
 @keyframes intro_button_hover {
-    0%      { 
-        background: transparent;
-        border: solid #ffda5a 2px;
-        color: #333
-     }
     100%    { 
         background: #333; 
         border: solid #333 2px;
         color: #ffda5a;
+    }
+}
+
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+  }
+@keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
     }
 }
 
