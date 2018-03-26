@@ -29,6 +29,11 @@ h3 {
     border: 2px solid #ffda5a;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
 }
 
 .skill {
@@ -59,7 +64,13 @@ h3 {
 }
 
 .introduction .btn {
-    color: #eee;
+    color: #fff;
+    border: none;
+}
+
+.introduction .btn:hover {
+    color: #111;
+    background: #ffda5a;
 }
 
 .introduction .see-more {
@@ -142,9 +153,13 @@ h3 {
 
 .project-buttons .btn {
     margin-right: 16px;
-    background-color: #ffda5a;
-    color: #fff;
-    box-shadow: 0 3px 8px grey;
+    background: transparent;
+    border: solid #ffda5a 2px;
+    color: #333
+}
+
+.project-buttons .btn:hover {
+    animation: intro_button_hover 0.7s ease-in
 }
 
 .contact {
@@ -209,3 +224,20 @@ h3 {
     height: 24px;
     padding: 6px;
 }
+
+@keyframes intro_button_hover {
+    0%      { 
+        background: transparent;
+        border: solid #ffda5a 2px;
+        color: #333
+     }
+    100%    { 
+        background: #333; 
+        border: solid #333 2px;
+        color: #ffda5a;
+    }
+}
+
+
+    
+    
