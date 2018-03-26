@@ -97,6 +97,10 @@ h3 {
     border: none;
 }
 
+.introduction .btn:hover {
+    color: #333;
+}
+
 .introduction .see-more {
     position: absolute;
     bottom: 0px;
@@ -177,7 +181,8 @@ h3 {
 
 .project-buttons .btn {
     margin-right: 16px;
-    color: #333
+    color: #333;
+    border: none;
 }
 
 .project-buttons .btn:hover,
