@@ -4,6 +4,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow: auto;
 }
 
 h2 {
@@ -262,15 +263,34 @@ h3 {
 
 /* Smaller screens */
 @media screen and (max-width: 576px) {
+    body {
+        width: 100%;
+        position: block;
+    }
+
     .introduction .logo {
         margin-top: 32px;
-        height: 94px;
+        height: 64px;
     }
 
     .introduction h1 {
-        font-size: 24pt;
-        margin-top: 64px;
+        font-size: 18pt;
+        margin: 156px 18px 32px;
     }
+
+    .introduction .btn {
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+    
+    .introduction .see-more div {
+        font-size: 14px;
+    }
+
+    .introduction .see-more img {
+        width: 16px;
+    }
+    
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
@@ -285,11 +305,6 @@ h3 {
     }
 }
 
-/* @media screen and (min-width: 992px) {
-    body {
-        background: blue;
-    }
-} */
 
 /* Animations & effects */
 @keyframes intro_button_hover {
