@@ -415,15 +415,23 @@ h3 {
     }
 }
 
-@media screen and (min-width: 577px) and (max-width: 767px) {
+/* @media screen and (min-width: 577px) and (max-width: 767px) {
     body {
         background: green;
     }
-}
+} */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background: blue;
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .project-item {
+        margin: 32px 16px;
+    }
+
+    .project-item img {
+        width: 45%;
+    }
+
+    .contact {
+        padding: 32px;
     }
 }
 
