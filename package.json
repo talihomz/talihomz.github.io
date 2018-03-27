@@ -1,0 +1,28 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Website to showcase my personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/styles/main.scss public/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavaVuckovic/Personal-Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "skills",
+    "competencies"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavaVuckovic/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/SavaVuckovic/Personal-Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
