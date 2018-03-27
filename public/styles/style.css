@@ -318,6 +318,59 @@ h3 {
         line-height: 24px;
         font-size: 14px;
     }
+
+    .projects h2 {
+        font-size: 20px;
+    }
+
+    .projects a {
+        color: #5EA4F7;
+        text-decoration: none;
+        border-bottom: 1px dotted #5EA4F7;
+    }
+
+    .project-item {
+        margin: 64px 16px 0;
+        box-shadow: 0 3px 10px grey;
+        height: auto;
+        max-height: auto;
+    }
+
+    .project-item img {
+        display: none;
+    }
+
+    .project-info {
+        padding: 28px;
+    }
+
+    .project-info p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .project-item h3 {
+        font-size: 26px;
+    }
+    
+    .tech-stack li {
+        width: auto;
+        padding: 6px;
+        margin: 4px;
+        border: 2px #5366FF solid;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    .project-buttons {
+        position: static;
+        margin: 32px 0 20px;
+    }
+    
+    .project-buttons .btn {
+        padding: 12px 16px;
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
