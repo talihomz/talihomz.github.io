@@ -4,7 +4,8 @@
   "description": "Website to showcase my personal portfolio",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server"
+    "dev": "gulp",
+    "build:css" : "gulp sass"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,8 @@
   },
   "homepage": "https://github.com/SavaVuckovic/Personal-Portfolio#readme",
   "devDependencies": {
-    "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
-    "webpack": "^4.3.0",
-    "webpack-dev-server": "^3.1.0"
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
   }
 }
