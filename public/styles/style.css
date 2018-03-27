@@ -371,6 +371,48 @@ h3 {
         padding: 12px 16px;
         font-size: 15px;
     }
+
+    .contact {
+        padding: 32px;
+    }
+
+    .contact h1 {
+        font-size: 20px;
+    }
+
+    .contact p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .contact .btn {
+        padding: 12px 32px;
+        font-size: 12px;
+    }
+    
+    .footer .logo {
+        margin-top: 72px;
+        height: 48px;
+    }
+    
+    .copyright {
+        font-size: 13px;
+    }
+    
+    .social-links {
+        padding-bottom: 48px;
+    }
+    
+    .social-link {
+        width: 28px;
+        height: 28px;
+        padding: 6px;
+    }
+    
+    .social-link img {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
