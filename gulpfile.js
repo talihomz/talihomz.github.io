@@ -6,15 +6,7 @@ var sass        = require('gulp-sass');
 gulp.task('serve', function() {
 
   browserSync.init({
-      server: "./public",
-      middleware: [
-        {
-            route: "/css",
-            handle: function (req, res, next) {
-                next();
-            }
-        }
-    ]
+      server: "./public"
   });
 
   gulp.watch("src/scss/**/*.scss", ['sass']);
