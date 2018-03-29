@@ -38,6 +38,11 @@ Build CSS with the following command:
 npm run build:css
 ```
 
+Optimize images in public folder with the following command: 
+```
+npm run build:images
+```
+
 ## Running the tests
 
 Still thinking about this. Are tests overkill for this simple project?
@@ -87,4 +92,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-<<COMING SOON>>
+<COMING SOON>
