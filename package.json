@@ -2,10 +2,11 @@
   "name": "personal-portfolio",
   "version": "1.0.0",
   "description": "Website to showcase my personal portfolio",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
-    "build:css" : "gulp sass"
+    "build:css": "gulp sass",
+    "build:images": "gulp images"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
+    "gulp-image": "^4.3.0",
     "gulp-sass": "^3.2.1"
   }
 }

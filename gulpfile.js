@@ -1,4 +1,5 @@
 var gulp        = require('gulp');
+var image       = require('gulp-image');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 
@@ -21,4 +22,10 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['sass', 'serve']);
+gulp.task('images', function () {
+  gulp.src('src/images/*')
+    .pipe(image())
+    .pipe(gulp.dest('public/images'));
+});
+
+gulp.task('default', ['sass', 'images', 'serve']);
