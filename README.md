@@ -21,21 +21,21 @@ v9.8.0
 
 ### Installing
 
-This project is served and compiled with the help of `webpack-dev-server`. 
+This project is served and compiled with the help of `gulp`. 
 
-See the [Official documentation](https://webpack.js.org/configuration/dev-server/) for more details.
+See the [Official documentation](https://gulpjs.com/) for more details.
 
 Run the server with the following command:
 
 ```
-npm run start:dev
+npm run dev
 ```
 
-Once everything is loaded, head over to your browser to [see a live copy of the portfolio](http://localhost:3000/).
+Once everything is loaded, head over to your browser to [see a live copy of the portfolio](http://localhost:8000/).
 
-You can also run plain webpack with 
+Build CSS with the following command: 
 ```
-npm run start
+npm run build:css
 ```
 
 ## Running the tests
@@ -87,6 +87,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+<<COMING SOON>>
