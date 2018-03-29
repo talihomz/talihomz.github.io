@@ -1,6 +1,7 @@
 var gulp        = require('gulp');
 var image       = require('gulp-image');
 var browserSync = require('browser-sync').create();
+var runSequence = require('run-sequence');
 var sass        = require('gulp-sass');
 
 // Static Server + watching scss/html files
@@ -10,6 +11,7 @@ gulp.task('serve', function() {
       server: "./public"
   });
 
+  gulp.watch("src/index.html", ['html']);
   gulp.watch("src/scss/**/*.scss", ['sass']);
   gulp.watch("public/*.html").on('change', browserSync.reload);
 });
@@ -28,4 +30,15 @@ gulp.task('images', function () {
     .pipe(gulp.dest('public/images'));
 });
 
-gulp.task('default', ['sass', 'images', 'serve']);
+gulp.task('html', function(){
+  gulp.src('src/index.html')
+    .pipe(gulp.dest('public'))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('default', function(callback){
+  runSequence('sass',
+              ['images', 'html'],
+              'serve',
+              callback);
+});
