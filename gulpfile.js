@@ -1,8 +1,8 @@
 var gulp        = require('gulp');
-var image       = require('gulp-image');
 var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 var sass        = require('gulp-sass');
+const imagemin  = require('gulp-imagemin');
 
 // Static Server + watching scss/html files
 gulp.task('serve', function() {
@@ -24,11 +24,17 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task('images', function () {
-  gulp.src('src/images/*')
-    .pipe(image())
-    .pipe(gulp.dest('public/images'));
-});
+// gulp.task('images', function () {
+//   gulp.src('src/images/*')
+//     .pipe(image())
+//     .pipe(gulp.dest('public/images'));
+// });
+
+gulp.task('images', () =>
+    gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('public/images'))
+);
 
 gulp.task('html', function(){
   gulp.src('src/index.html')
