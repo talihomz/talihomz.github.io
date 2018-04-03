@@ -11,7 +11,7 @@ gulp.task('serve', function() {
       server: "./public"
   });
 
-  gulp.watch("src/index.html", ['html']);
+  gulp.watch("src/home.html", ['html']);
   gulp.watch("src/scss/**/*.scss", ['sass']);
   gulp.watch("public/*.html").on('change', browserSync.reload);
 });
